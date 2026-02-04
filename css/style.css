@@ -1,0 +1,537 @@
+/* 1. VARIABLES AND RESET */
+:root {
+  --primary-dark: #0f172a;
+  --accent-green: #2d8b5a;
+  --accent-soft: #f0f9f4;
+  --bg-light: #f8fafc;
+  --white: #ffffff;
+  --text-main: #334155;
+  --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  --shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background-color: var(--bg-light);
+  color: var(--text-main);
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.section-padding {
+  padding: 6rem 0;
+}
+
+/* 2. HEADER AND NAVIGATION */
+header {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.navbar-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 1.2rem;
+  color: var(--primary-dark);
+}
+
+.atom-icon {
+  height: 40px;
+  transition: var(--transition);
+}
+
+.brand:hover .atom-icon {
+  transform: rotate(180deg);
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: var(--text-main);
+  font-weight: 500;
+  transition: var(--transition);
+}
+
+.nav-links a:hover {
+  color: var(--accent-green);
+}
+
+.cv-link {
+  color: var(--accent-green) !important;
+  font-weight: 700 !important;
+  border: 1px solid var(--accent-green);
+  padding: 5px 12px;
+  border-radius: 6px;
+  transition: var(--transition);
+}
+
+.cv-link:hover {
+  background-color: var(--accent-green);
+  color: white !important;
+}
+
+/* 3. HERO SECTION */
+.hero {
+  padding: 8rem 0 5rem;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 3.5rem;
+  color: var(--primary-dark);
+  margin-bottom: 1.5rem;
+  line-height: 1.2;
+}
+
+.text-accent {
+  color: var(--accent-green);
+}
+
+.btn-primary {
+  display: inline-block;
+  background: var(--accent-green);
+  color: var(--white);
+  padding: 0.9rem 2.2rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: var(--transition);
+  margin-top: 1rem;
+}
+
+.btn-primary:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(45, 139, 90, 0.2);
+}
+
+/* 4. ABOUT SECTION (Grid for image and text) */
+/* Space between text and image on desktop */
+.about-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 5rem; /* Increased space between text and image here */
+  align-items: start; /* Aligns the top of the image with the top of the text */
+}
+
+.section-title {
+  font-size: 2.2rem;
+  color: var(--primary-dark);
+  margin-bottom: 1.5rem;
+}
+
+.text-left {
+  text-align: left;
+}
+
+/* IMAGE CONTROL */
+.about-image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-img {
+  width: 100%;
+  max-width: 350px; /* Reduced to 350px for better balance */
+  height: 450px; /* Slightly elongated rectangular shape */
+  object-fit: cover;
+  object-position: top;
+  border-radius: 20px;
+  border: 8px solid var(--white);
+  box-shadow: var(--shadow);
+
+  /* BLACK AND WHITE VARIANT */
+  filter: grayscale(100%);
+  transition: var(--transition); /* Smooth color transition */
+}
+
+/* When someone hovers over the image, the color returns */
+.profile-img:hover {
+  filter: grayscale(0%);
+  transform: scale(1.02); /* Slightly enlarges, gives a sense of depth */
+}
+
+/* 5. ACHIEVEMENT CARDS */
+.achievements-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  margin-top: 2.5rem;
+}
+
+.achievement-card {
+  background: var(--white);
+  padding: 1.2rem;
+  border-radius: 12px;
+  border-left: 5px solid var(--accent-green);
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  box-shadow: var(--shadow);
+  transition: var(--transition);
+}
+
+.achievement-card:hover {
+  transform: translateX(10px);
+}
+
+.achievement-icon {
+  font-size: 2rem;
+}
+
+.achievement-rank {
+  display: block;
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--accent-green);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.achievement-title {
+  font-size: 1.1rem;
+  color: var(--primary-dark);
+  margin: 2px 0;
+}
+
+.achievement-desc {
+  font-size: 0.9rem;
+  color: var(--text-main);
+}
+
+/* 6. PROJECTS (Accordion style) */
+.project-item {
+  background: var(--white);
+  border-radius: 12px;
+  margin-bottom: 1.2rem;
+  border: 1px solid #e2e8f0;
+  overflow: hidden;
+  transition: var(--transition);
+}
+
+.project-header {
+  padding: 1.5rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.project-category {
+  color: var(--accent-green);
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.project-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.4s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  /* Padding must be 0 while closed */
+  padding: 0 20px;
+  opacity: 0;
+}
+
+.project-item.active .project-content {
+  max-height: 1500px; /* Increased to fit long content */
+  padding-top: 20px;
+  padding-bottom: 30px;
+  opacity: 1;
+}
+
+.project-features {
+  text-align: left; /* Align text to the left */
+  margin: 15px 0; /* Space above and below the list */
+  padding-left: 20px; /* Space on the left so the bullets have room */
+  list-style-type: disc; /* Classic filled bullets */
+}
+
+.project-features li {
+  margin-bottom: 5px; /* Space between two bullet points */
+  font-size: 0.95rem; /* Slightly smaller font for a more elegant look */
+  color: #444; /* Dark gray color for better readability */
+}
+
+.toggle-arrow {
+  color: var(--accent-green);
+  transition: var(--transition);
+}
+
+.project-item.active .toggle-arrow {
+  transform: rotate(180deg);
+}
+
+.project-img {
+  width: 100%;
+  max-width: 550px; /* Can increase if you want them wider */
+  height: auto; /* KEY: Prevent the image from ever being cropped */
+  display: block;
+  margin: 0 auto 15px auto;
+  border-radius: 8px;
+  border: 1px solid #e2e8f0;
+  /* Removed object-fit: cover because it causes cropping issues */
+}
+
+/* Special rule just for the "narrowed" image */
+.img-narrow {
+  max-width: 350px; /* Reduces the width, and since height:auto, the height will reduce proportionally */
+}
+
+.project-links {
+  display: flex;
+  gap: 15px;
+  margin-top: auto; /* Pushes buttons to the bottom if text lengths vary */
+  padding-top: 20px;
+}
+
+.link-btn {
+  text-decoration: none;
+  color: var(--white);
+  background-color: var(--accent-green);
+  padding: 8px 20px;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  transition: var(--transition);
+  border: 1px solid var(--accent-green);
+}
+
+.link-btn:hover {
+  background-color: transparent;
+  color: var(--accent-green);
+}
+
+/* Modificator for GitHub button - GRAY VARIANT */
+.link-btn.github {
+  background-color: #555;
+  border-color: #555;
+}
+
+.link-btn.github:hover {
+  background-color: transparent;
+  color: #555;
+  border-color: #555;
+}
+
+/* 7. METHODOLOGY */
+.method-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.method-card {
+  background: var(--white);
+  padding: 3rem 2rem;
+  border-radius: 16px;
+  text-align: center;
+  transition: var(--transition);
+}
+
+.method-card:hover {
+  background: var(--accent-soft);
+}
+
+.method-icon {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+/* 8. FAQ SECTION - Using details and summary tags */
+#faq .faq-wrapper {
+  max-width: 800px;
+  margin: 2rem auto 0;
+}
+
+details {
+  background: var(--white);
+  padding: 0; /* Reset padding so summary covers the full width */
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  margin-bottom: 1.2rem;
+  overflow: hidden; /* Important for animation */
+  border: 1px solid #edf2f7;
+  transition: transform 0.3s ease;
+}
+
+details:hover {
+  transform: translateY(-2px);
+}
+
+details .faq-content {
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
+  max-height: 0;
+  display: block; /* Important for animation */
+}
+
+details[open] .faq-content {
+  max-height: 500px; /* Enough space to see everything */
+}
+
+summary {
+  padding: 1.5rem 2rem;
+  font-weight: 600;
+  color: var(--primary-dark);
+  cursor: pointer;
+  list-style: none; /* Hides the default triangle in most browsers */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  outline: none;
+}
+
+/* Hiding the triangle in Safari browser */
+summary::-webkit-details-marker {
+  display: none;
+}
+
+/* Custom plus symbol */
+summary::after {
+  content: "+";
+  color: var(--accent-green);
+  font-size: 1.8rem;
+  font-weight: 300;
+  transition: transform 0.3s ease;
+}
+
+/* Style when FAQ is open */
+details[open] {
+  border-left: 5px solid var(--accent-green);
+}
+
+details[open] summary::after {
+  transform: rotate(45deg); /* Plus becomes X */
+}
+
+/* Content that opens */
+.faq-content {
+  padding: 0 2rem 1.5rem;
+  color: var(--text-main);
+  line-height: 1.7;
+  /* Smooth appearance animation */
+  animation: slideDown 0.4s ease-out;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* 9. FOOTER */
+footer {
+  background-color: var(--primary-dark);
+  color: white;
+  padding: 40px 0;
+  margin-top: 60px;
+}
+
+footer .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+footer p {
+  margin: 0;
+  font-size: 0.95rem;
+  opacity: 0.9;
+}
+
+footer div a {
+  color: var(--accent-green);
+  text-decoration: none;
+  margin-left: 20px;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+footer div a:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+/* 10. MEDIA QUERIES */
+@media (max-width: 992px) {
+  .about-grid {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .about-image-container {
+    order: -1; /* Image goes above text on mobile */
+  }
+
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .navbar-flex {
+    flex-direction: column;
+    height: auto;
+    padding: 1.5rem;
+    gap: 1rem;
+  }
+
+  .nav-links {
+    gap: 1.2rem;
+  }
+
+  @media (max-width: 768px) {
+    footer .container {
+      flex-direction: column;
+      text-align: center;
+    }
+
+    footer div a {
+      margin: 0 10px;
+    }
+  }
+}

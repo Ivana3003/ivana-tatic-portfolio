@@ -1,0 +1,297 @@
+<!doctype html>
+<html lang="sr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ivana Tatić | MSc Chemistry & Frontend Developer</title>
+    <link rel="icon" type="image/png" href="images/atom.png" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="container navbar-flex">
+        <div class="brand">
+          <img src="images/atom.png" alt="Logo" class="atom-icon" />
+          <span><strong>Ivana Tatić</strong></span>
+        </div>
+        <ul class="nav-links">
+          <li><a href="#o-meni">O meni</a></li>
+          <li><a href="#projekti">Projekti</a></li>
+          <li><a href="#metodologija">Metodologija</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li>
+            <a href="assets/ivana-tatic-cv.pdf" target="_blank" class="cv-link"
+              >CV</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero container">
+        <h1>Od laboratorije do <span class="text-accent">čistog koda</span></h1>
+        <p>
+          Master organske hemije sa fokusom na frontend razvoj i analitički
+          pristup rešavanju problema.
+        </p>
+        <a href="#projekti" class="btn-primary">Pogledaj radove</a>
+      </section>
+
+      <section id="o-meni" class="container section-padding">
+        <div class="about-grid">
+          <div class="about-text">
+            <h2 class="section-title text-left">
+              Naučna preciznost u digitalnom svetu
+            </h2>
+            <p>
+              Kao Master organske hemije, navikla sam na analitičku preciznost i
+              dešifrovanje kompleksnih sistema. Prelazak u IT vidim kao prirodnu
+              evoluciju moje radoznalosti: danas, umesto molekula, strukturiram
+              čist i funkcionalan kod kao Frontend Developer fokusiran na
+              besprekorno korisničko iskustvo.
+            </p>
+
+            <div class="achievements-container">
+              <div class="achievement-card">
+                <div class="achievement-icon">🏆</div>
+                <div class="achievement-info">
+                  <span class="achievement-rank"
+                    >1. Mesto - Državno takmičenje</span
+                  >
+                  <h4 class="achievement-title">Lančana reakcija</h4>
+                  <p class="achievement-desc">
+                    Mentorski rad sa učenicima Gimnazije.
+                  </p>
+                </div>
+              </div>
+
+              <div class="achievement-card">
+                <div class="achievement-icon">🥈</div>
+                <div class="achievement-info">
+                  <span class="achievement-rank"
+                    >2. Mesto - Državno takmičenje</span
+                  >
+                  <h4 class="achievement-title">Heroji budućnosti</h4>
+                  <p class="achievement-desc">
+                    Inovativni pristup rešavanju problema.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="about-image-container">
+            <img
+              src="images/ivana-tatic.jpg"
+              alt="Ivana Tatić"
+              class="profile-img"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section id="projekti" class="container section-padding">
+        <h2 class="section-title">Istaknuti Projekti</h2>
+        <div class="projects-list">
+          <article class="project-item">
+            <div class="project-header" onclick="toggleProject(this)">
+              <div>
+                <span class="project-category">Web App</span>
+                <h3>Moj Motivator</h3>
+              </div>
+              <span class="toggle-arrow">▼</span>
+            </div>
+            <div class="project-content">
+              <img
+                src="images/moj-motivator.webp"
+                alt="Preview projekta Moj Motivator"
+                class="project-img img-narrow"
+                width="542"
+                height="589"
+              />
+              <ul class="project-features">
+                <li>
+                  <strong>Opis:</strong> Interaktivna aplikacija za
+                  personalizovane citate sa fokusom na moderan UI i korisničko
+                  iskustvo.
+                </li>
+                <li>
+                  <strong>Tehnologije:</strong> JS (LocalStorage), CSS Variables
+                  (Dark Mode), Lucide Icons.
+                </li>
+                <li>
+                  <strong>Fokus:</strong> Pamćenje korisničkih podešavanja i
+                  fluidan dizajn.
+                </li>
+              </ul>
+
+              <div class="project-links">
+                <a
+                  href="https://it-moj-motivator.netlify.app/"
+                  target="_blank"
+                  class="link-btn"
+                  >Live Demo</a
+                >
+                <a
+                  href="https://github.com/Ivana3003/moj-motivator"
+                  target="_blank"
+                  class="link-btn github"
+                  >GitHub</a
+                >
+              </div>
+            </div>
+          </article>
+
+          <article class="project-item">
+            <div class="project-header" onclick="toggleProject(this)">
+              <div>
+                <span class="project-category">Web App / Science</span>
+                <h3>Supplement Tracker</h3>
+              </div>
+              <span class="toggle-arrow">▼</span>
+            </div>
+            <div class="project-content">
+              <img
+                src="images/supplement-tracker.webp"
+                alt="Preview projekta Supplement Tracker"
+                class="project-img"
+                width="1067"
+                height="815"
+              />
+              <ul class="project-features">
+                <li>
+                  <strong>Opis:</strong> Pametna zdravstvena aplikacija za
+                  upravljanje unosom suplemenata sa fokusom na preciznost
+                  podataka i funkcionalnost.
+                </li>
+                <li>
+                  <strong>Tehnologije:</strong> JavaScript (i18n), HTML5 Data
+                  attributes, CSS Flexbox/Grid, Responsive Design
+                </li>
+                <li>
+                  <strong>Fokus:</strong> Upravljanje podacima u realnom vremenu
+                  i trajnost (Data persistence) putem LocalStorage-a.
+                </li>
+              </ul>
+
+              <div class="project-links">
+                <a
+                  href="https://it-supplement-tracker.netlify.app/"
+                  target="_blank"
+                  class="link-btn"
+                  >Live Demo</a
+                >
+                <a
+                  href="https://github.com/Ivana3003/supplement-tracker"
+                  target="_blank"
+                  class="link-btn github"
+                  >GitHub</a
+                >
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="metodologija" class="container section-padding">
+        <h2 class="section-title">Metodologija i pristup</h2>
+        <div class="method-grid">
+          <div class="method-card">
+            <div class="method-icon">🔬</div>
+            <h3>Analitički pristup</h3>
+            <p>
+              Kao master organske hemije, prenosim laboratorijsku disciplinu u
+              kod. Svaki problem razlažem na manje, rešive komponente uz
+              maksimalnu preciznost.
+            </p>
+          </div>
+
+          <div class="method-card">
+            <div class="method-icon">⚡</div>
+            <h3>Moderni Standardi</h3>
+            <p>
+              Koristim Scrimba i Kampster metodologiju: semantički HTML,
+              napredni CSS (Flexbox/Grid) i čistu logiku JavaScript-a.
+            </p>
+          </div>
+
+          <div class="method-card">
+            <div class="method-icon">📚</div>
+            <h3>Kontinuirani razvoj</h3>
+            <p>
+              U IT svetu, kao i u nauci, učenje nikada ne prestaje. Trenutno
+              produbljujem znanje JavaScript-a kroz napredne kurseve.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="faq" class="container section-padding">
+        <h2 class="section-title">Česta pitanja</h2>
+
+        <div class="faq-wrapper">
+          <details>
+            <summary>Kako 18 godina hemije pomaže u kucanju koda?</summary>
+            <div class="faq-content">
+              <p>
+                Struktura, disciplina i sposobnost da satima rešavam kompleksne
+                probleme bez odustajanja. Rad u laboratoriji i programiranje
+                dele istu osnovu: precizno praćenje protokola i analitičko
+                rešavanje problema.
+              </p>
+            </div>
+          </details>
+
+          <details>
+            <summary>Koji je tvoj sledeći korak u učenju?</summary>
+            <div class="faq-content">
+              <p>
+                Nakon utvrđivanja osnova JavaScript-a, planiram prelazak na
+                React framework i dublje izučavanje Sass-a, kako bih dodatno
+                optimizovala proces stilizovanja.
+              </p>
+            </div>
+          </details>
+
+          <details>
+            <summary>Da li si spremna za rad u timu?</summary>
+            <div class="faq-content">
+              <p>
+                Kroz rad u obrazovanju i mentorstvo, razvila sam visok nivo
+                komunikacije i timskog duha. Verujem da je razmena znanja
+                ključna za uspeh svakog projekta.
+              </p>
+            </div>
+          </details>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        <p>
+          &copy; 2026 | Ivana Tatić | Master organske hemije &mdash; Frontend
+          Developer
+        </p>
+        <div>
+          <a
+            href="https://linkedin.com/in/ivana-tatic"
+            target="_blank"
+            rel="noopener"
+            >LinkedIn</a
+          >
+          <a href="https://github.com/Ivana3003" target="_blank" rel="noopener"
+            >GitHub</a
+          >
+          <a href="mailto:iramljak84@gmail.com">Kontakt</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
