@@ -6,7 +6,8 @@ Welcome to my portfolio! This project is a fusion of my background in scientific
 
 ## 🚀 Live Demo
 
-[Link to your GitHub Pages site]
+You can view the live version of this portfolio here:  
+👉 **[https://ivana-tatic-portfolio.netlify.app/](https://ivana-tatic-portfolio.netlify.app/)**
 
 ## 🛠 Tech Stack
 
