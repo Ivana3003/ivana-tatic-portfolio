@@ -9,6 +9,11 @@ Welcome to my portfolio! This project is a fusion of my background in scientific
 You can view the live version of this portfolio here:  
 👉 **[https://ivana-tatic-portfolio.netlify.app/](https://ivana-tatic-portfolio.netlify.app/)**
 
+## 📄 Curriculum Vitae
+
+Download my full professional resume here:  
+👉 **[Ivana-Tatic-CV.pdf](./assets/Ivana-Tatic-CV.pdf)**
+
 ## 🛠 Tech Stack
 
 - **HTML5** – Semantic structure for SEO and accessibility.
@@ -16,11 +21,17 @@ You can view the live version of this portfolio here:
 - **JavaScript (Vanilla)** – DOM manipulation and interactive UI components.
 - **Responsive Design** – Fully optimized for mobile, tablet, and desktop views.
 
-## 🚀 Future Improvements
+## 💻 Featured Projects
 
-- **Internationalization (i18n):** Planning to implement multi-language support (Serbian/English) to make the portfolio accessible to a global audience.
-- **Dark/Light Mode:** Implementing a theme switcher for better user experience.
-- **Contact Form Validation:** Adding more robust client-side validation for the contact section.
+- **Moj Motivator** – Productivity web app with dynamic themes and LocalStorage integration.
+- **Supplement Tracker** – Specialized tool for managing intake, blending pharmaceutical knowledge with frontend logic.
+
+## 🚀 Future Improvements & Upcoming Projects
+
+- **Internationalization (i18n):** Implementing multi-language support (Serbian/English).
+- **Lab Solution Preparator:** A Molarity & Dilution Calculator for laboratory precision.
+- **Hormone & Drug Interactive Simulator:** Visualizing chemical interactions.
+- **Chemistry Quick-Ref:** A Chrome Extension for instant access to chemical constants.
 
 ## 🔬 Scientific Approach to Code
 
