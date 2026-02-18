@@ -18,18 +18,20 @@ Download my full professional resume here:
 
 - **HTML5** – Semantic structure for SEO and accessibility.
 - **CSS3** – Custom properties (variables), Grid, and Flexbox layouts.
-- **JavaScript (Vanilla)** – DOM manipulation and interactive UI components.
+- **JavaScript (ES6+)** – **Object-Oriented Programming (OOP)**, state management, and advanced DOM manipulation.
 - **Responsive Design** – Fully optimized for mobile, tablet, and desktop views.
+- **Tools & Deployment** – Git/GitHub for version control and Netlify for CI/CD.
+- **SEO & Performance** – Optimized metadata and sub-second load times.
 
 ## 💻 Featured Projects
 
+- **LabCalc** - A high-precision laboratory calculator for chemical solutions (OOP, ES6+).
+- **Supplement Tracker** - Pharmaceutical management app with i18n support.
 - **Moj Motivator** – Productivity web app with dynamic themes and LocalStorage integration.
-- **Supplement Tracker** – Specialized tool for managing intake, blending pharmaceutical knowledge with frontend logic.
 
 ## 🚀 Future Improvements & Upcoming Projects
 
 - **Internationalization (i18n):** Implementing multi-language support (Serbian/English).
-- **Lab Solution Preparator:** A Molarity & Dilution Calculator for laboratory precision.
 - **Hormone & Drug Interactive Simulator:** Visualizing chemical interactions.
 - **Chemistry Quick-Ref:** A Chrome Extension for instant access to chemical constants.
 
