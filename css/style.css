@@ -576,6 +576,9 @@ footer div a:hover {
 
   .nav-links {
     gap: 1.2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    row-gap: 0.75rem;
   }
 
   .language-switcher {

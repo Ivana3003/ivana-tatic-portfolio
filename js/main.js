@@ -15,11 +15,11 @@ const translations = {
     "hero.title": "Od laboratorije do ",
     "hero.titleAccent": "čistog koda",
     "hero.description":
-      "Master organske hemije sa fokusom na frontend razvoj i analitički pristup rešavanju problema.",
-    "hero.cta": "Pogledaj radove",
+      "Frontend developer sa master diplomom iz organske hemije, fokusirana na jasne, funkcionalne i pristupačne web interfejse.",
+    "hero.cta": "Istraži radove",
     "about.title": "Naučna preciznost u digitalnom svetu",
     "about.description":
-      "Kao master organske hemije, navikla sam na analitičku preciznost i dešifrovanje kompleksnih sistema. Prelazak u IT vidim kao prirodnu evoluciju moje radoznalosti: danas, umesto molekula, strukturiram čist i funkcionalan kod kao Frontend Developer fokusiran na besprekorno korisničko iskustvo.",
+      "Kao master organske hemije, navikla sam na analitičku preciznost i razumevanje kompleksnih sistema. Prelazak u IT vidim kao prirodan nastavak svoje radoznalosti: danas, umesto molekula, gradim čist, funkcionalan i pristupačan frontend interfejs.",
     "about.achievementOne.rank": "1. mesto - državno takmičenje",
     "about.achievementOne.title": "Lančana reakcija",
     "about.achievementOne.description": "Mentorski rad sa učenicima gimnazije.",
@@ -58,23 +58,24 @@ const translations = {
     "methodology.title": "Metodologija i pristup",
     "methodology.analytical.title": "Analitički pristup",
     "methodology.analytical.description":
-      "Kao master organske hemije, prenosim laboratorijsku disciplinu u kod. Svaki problem razlažem na manje, rešive komponente uz maksimalnu preciznost.",
-    "methodology.standards.title": "Moderni standardi",
+      "Kompleksne zadatke razlažem na jasne, proverljive korake. Iskustvo iz laboratorijskog rada primenjujem kroz pažnju prema detaljima, validaciju i sistematično rešavanje problema.",
+    "methodology.standards.title": "Kvalitet u implementaciji",
     "methodology.standards.description":
-      "Koristim Scrimba i Kampster metodologiju: semantički HTML, napredni CSS (Flexbox/Grid) i čistu logiku JavaScript-a.",
+      "Gradim semantične, responzivne i pristupačne interfejse uz HTML, CSS i JavaScript. Posebnu pažnju posvećujem jasnoći koda, validaciji unosa i korisnom feedback-u za korisnika.",
     "methodology.growth.title": "Kontinuirani razvoj",
     "methodology.growth.description":
-      "U IT svetu, kao i u nauci, učenje nikada ne prestaje. Trenutno produbljujem znanje JavaScript-a kroz napredne kurseve.",
+      "Učenje gradim kroz praktične projekte: istražujem, testiram, dokumentujem odluke i postepeno unapređujem način na koji razvijam web aplikacije.",
     "faq.title": "Česta pitanja",
-    "faq.first.question": "Kako 18 godina hemije pomaže u kucanju koda?",
+    "faq.first.question":
+      "Kako moje iskustvo iz hemije doprinosi radu u frontend razvoju?",
     "faq.first.answer":
-      "Struktura, disciplina i sposobnost da satima rešavam kompleksne probleme bez odustajanja. Rad u laboratoriji i programiranje dele istu osnovu: precizno praćenje protokola i analitičko rešavanje problema.",
-    "faq.second.question": "Koji je tvoj sledeći korak u učenju?",
+      "Laboratorijski rad me je naučio preciznosti, dokumentovanju postupaka i sistematičnom rešavanju problema. Isti pristup primenjujem kada planiram, razvijam i proveravam web interfejse.",
+    "faq.second.question": "Na čemu trenutno radim i šta dalje učim?",
     "faq.second.answer":
-      "Nakon utvrđivanja osnova JavaScript-a, planiram prelazak na React framework i dublje izučavanje Sass-a, kako bih dodatno optimizovala proces stilizovanja.",
-    "faq.third.question": "Da li si spremna za rad u timu?",
+      "Nastavljam da produbljujem JavaScript kroz praktične projekte, testiranje i rad sa realnim korisničkim scenarijima. Sledeći fokus su React i savremeni frontend alati.",
+    "faq.third.question": "Kako pristupam radu u timu?",
     "faq.third.answer":
-      "Kroz rad u obrazovanju i mentorstvo, razvila sam visok nivo komunikacije i timskog duha. Verujem da je razmena znanja ključna za uspeh svakog projekta.",
+      "Iskustvo u obrazovanju i mentorstvu razvilo je moje komunikacione i saradničke veštine. Cenim jasnu razmenu informacija, konstruktivan feedback i zajedničko rešavanje problema.",
     "footer.role": "Master organske hemije - Frontend Developer",
     "footer.contact": "Kontakt",
   },
@@ -92,11 +93,11 @@ const translations = {
     "hero.title": "From laboratory work to ",
     "hero.titleAccent": "clean code",
     "hero.description":
-      "MSc in Organic Chemistry focused on frontend development and analytical problem-solving.",
-    "hero.cta": "View projects",
+      "Frontend Developer with an MSc in Organic Chemistry, focused on clear, functional, and accessible web interfaces.",
+    "hero.cta": "Explore projects",
     "about.title": "Scientific Precision in the Digital World",
     "about.description":
-      "As an MSc in Organic Chemistry, I am accustomed to analytical precision and untangling complex systems. I see my move into IT as a natural evolution of my curiosity: today, instead of molecules, I structure clean, functional code as a Frontend Developer focused on a seamless user experience.",
+      "As an MSc in Organic Chemistry, I am used to analytical precision and understanding complex systems. I see my move into IT as a natural continuation of my curiosity: today, instead of molecules, I build clean, functional, and accessible frontend interfaces.",
     "about.achievementOne.rank": "1st place - national competition",
     "about.achievementOne.title": "Chain Reaction",
     "about.achievementOne.description":
@@ -136,23 +137,24 @@ const translations = {
     "methodology.title": "Methodology and Approach",
     "methodology.analytical.title": "Analytical Approach",
     "methodology.analytical.description":
-      "As an MSc in Organic Chemistry, I transfer laboratory discipline into code. I break every problem into smaller, solvable components with maximum precision.",
-    "methodology.standards.title": "Modern Standards",
+      "I break complex tasks into clear, verifiable steps. I apply my laboratory background through attention to detail, validation, and systematic problem-solving.",
+    "methodology.standards.title": "Thoughtful Implementation",
     "methodology.standards.description":
-      "I use the Scrimba and Kampster learning approach: semantic HTML, advanced CSS with Flexbox and Grid, and clean JavaScript logic.",
+      "I build semantic, responsive, and accessible interfaces with HTML, CSS, and JavaScript. I pay close attention to code clarity, input validation, and useful user feedback.",
     "methodology.growth.title": "Continuous Learning",
     "methodology.growth.description":
-      "In IT, as in science, learning never stops. I am currently deepening my JavaScript knowledge through advanced courses.",
+      "I learn through practical projects: I research, test, document decisions, and steadily improve how I build web applications.",
     "faq.title": "Frequently Asked Questions",
-    "faq.first.question": "How do 18 years of chemistry help with coding?",
+    "faq.first.question":
+      "How does my chemistry background support my frontend work?",
     "faq.first.answer":
-      "Structure, discipline, and the ability to work through complex problems for hours without giving up. Laboratory work and programming share the same foundation: following protocols precisely and solving problems analytically.",
-    "faq.second.question": "What is your next learning step?",
+      "Laboratory work taught me precision, documentation, and systematic problem-solving. I apply the same approach when planning, building, and testing web interfaces.",
+    "faq.second.question": "What am I currently working on and learning next?",
     "faq.second.answer":
-      "After consolidating my JavaScript foundations, I plan to move on to React and study Sass more deeply to further improve my styling workflow.",
-    "faq.third.question": "Are you ready to work in a team?",
+      "I continue to deepen my JavaScript skills through practical projects, testing, and real user scenarios. My next focus is React and modern frontend tools.",
+    "faq.third.question": "How do I approach teamwork?",
     "faq.third.answer":
-      "Through my work in education and mentoring, I have developed strong communication and teamwork skills. I believe that sharing knowledge is central to every project's success.",
+      "My experience in education and mentoring has developed my communication and collaboration skills. I value clear communication, constructive feedback, and shared problem-solving.",
     "footer.role": "MSc in Organic Chemistry - Frontend Developer",
     "footer.contact": "Contact",
   },
