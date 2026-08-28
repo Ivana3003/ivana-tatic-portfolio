@@ -1,64 +1,100 @@
-# Personal Portfolio | Ivana Tatić
+# Ivana Tatic | Frontend Developer Portfolio
 
-### 🧪 Ivana Tatić | MSc in Organic Chemistry & Frontend Developer
+A responsive personal portfolio that presents my transition from organic chemistry to frontend development. It highlights practical projects, an analytical approach to problem-solving, and a focus on clear, functional, and accessible web interfaces.
 
-Welcome to my portfolio! This project is a fusion of my background in scientific research and my passion for modern web development. It showcases my ability to transition from analytical laboratory work to building clean, functional code.
+## Links
 
-## 🚀 Live Demo
+- [Live portfolio](https://ivana-tatic-portfolio.netlify.app/)
+- [GitHub repository](https://github.com/Ivana3003/ivana-tatic-portfolio)
+- [Curriculum Vitae](./assets/Ivana-Tatic-CV.pdf)
 
-You can view the live version of this portfolio here:  
-👉 **[https://ivana-tatic-portfolio.netlify.app/](https://ivana-tatic-portfolio.netlify.app/)**
+## Features
 
-## 📄 Curriculum Vitae
+- Serbian and English interface with a saved language preference in `localStorage`
+- Responsive layouts for mobile, tablet, and desktop screens
+- Keyboard-accessible project accordion with ARIA expanded states
+- Visible keyboard focus styles and semantic HTML structure
+- Lazy-loaded project previews hosted locally in `images/projects/`
+- Dynamic footer year and secure external links
 
-Download my full professional resume here:  
-👉 **[Ivana-Tatic-CV.pdf](./assets/Ivana-Tatic-CV.pdf)**
+## Tech Stack
 
-## 🛠 Tech Stack
+- HTML5
+- CSS3: custom properties, Flexbox, Grid, responsive media queries
+- Vanilla JavaScript: DOM updates, i18n, `localStorage`, and accessible accordion behavior
+- Git and GitHub
+- Netlify deployment
 
-- **HTML5** – Semantic structure for SEO and accessibility.
-- **CSS3** – Custom properties (variables), Grid, and Flexbox layouts.
-- **JavaScript (ES6+)** – **Object-Oriented Programming (OOP)**, state management, and advanced DOM manipulation.
-- **Responsive Design** – Fully optimized for mobile, tablet, and desktop views.
-- **Tools & Deployment** – Git/GitHub for version control and Netlify for CI/CD.
-- **SEO & Performance** – Optimized metadata and sub-second load times.
+## Featured Projects
 
-## 💻 Featured Projects
+### [Supplement Tracker](https://it-supplement-tracker.netlify.app/)
 
-- **LabCalc** - A high-precision laboratory calculator for chemical solutions (OOP, ES6+).
-- **Supplement Tracker** - Pharmaceutical management app with i18n support.
-- **Moj Motivator** – Productivity web app with dynamic themes and LocalStorage integration.
+[GitHub repository](https://github.com/Ivana3003/supplement-tracker)
 
-## 🚀 Future Improvements & Upcoming Projects
+A supplement and hydration tracking application with data separated for each signed-in user.
 
-- **Internationalization (i18n):** Implementing multi-language support (Serbian/English).
-- **Hormone & Drug Interactive Simulator:** Visualizing chemical interactions.
-- **Chemistry Quick-Ref:** A Chrome Extension for instant access to chemical constants.
+- **Stack:** HTML, CSS, JavaScript, Firebase Authentication, LocalStorage, OpenFoodFacts API, Node test runner
+- **Highlights:** Email/password sign-in, supplement CRUD, hydration tracker, browser reminders, Serbian/English interface, API search, and in-app error handling
 
-## 🔬 Scientific Approach to Code
+### [LabCalc](https://it-lab-calc.netlify.app/)
 
-Coming from a Master’s degree in Organic Chemistry, I apply the same level of precision and methodology to my code as I did to chemical synthesis:
+[GitHub repository](https://github.com/Ivana3003/lab-calc)
 
-- **Clean Architecture:** Organized file structure and modular CSS.
-- **Analytical Thinking:** Breaking down complex UI problems into manageable components.
-- **Continuous Learning:** Actively completing Scrimba and Udemy career paths.
+A laboratory calculator that brings together common formulas used when preparing solutions.
 
-## 🏆 Key Achievements (Featured)
+- **Stack:** HTML, CSS, JavaScript, Jest
+- **Highlights:** Molarity, mass percentage, and dilution calculations; unit conversions; calculation history; presets; validation; accessible tabs; and toast notifications
 
-- **State Competition Mentor:** Guided students to 1st and 2nd place in Chemistry competitions.
-- **Project Management:** Coordinated educational projects "Chain Reaction" and "Future Heroes".
+### [Moj Motivator](https://it-moj-motivator.netlify.app/)
 
-## 📚 Education & Certifications
+[GitHub repository](https://github.com/Ivana3003/moj-motivator)
 
-- **Frontend Development Focused Training** | Scrimba
-  - _Completed modules: HTML5, CSS3 (Advanced Flexbox, Grid, & CSS Variables)_
-  - _Currently Learning: Interactive JavaScript & Logic_
-- **Web Development Certificate** | Kampster
-  - _Comprehensive course covering HTML, CSS, and JavaScript fundamentals_
-- **Continuous Learning (Planned for 2025/2026)** | Udemy
-  - _The Complete JavaScript Course: From Zero to Expert (Jonas Schmedtmann)_
-  - _Advanced CSS and Sass: Flexbox, Grid, Animations_
+An application for daily focus and inspirational messages, with custom message creation and saved favorites.
 
----
+- **Stack:** HTML, CSS, JavaScript, Jest, LocalStorage, Lucide Icons
+- **Highlights:** Message generator, custom message CRUD, favorites, light and dark theme, toast feedback, and accessibility support
 
-_Open for junior frontend roles and collaborative projects. Let's build something precise!_
+## Approach
+
+My background in organic chemistry shapes how I work with frontend code: I break complex tasks into verifiable steps, pay attention to details, validate inputs, and document decisions. I continue learning through practical projects, testing, and iterative improvement.
+
+## Selected Achievements
+
+- Mentored grammar school students on the "Chain Reaction" project, awarded first place at a national competition
+- Contributed to the "Heroes of the Future" project, awarded second place at a national competition
+
+## Run Locally
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/Ivana3003/ivana-tatic-portfolio.git
+   ```
+
+2. Open the project folder in VS Code.
+3. Start `index.html` with the Live Server extension, or open it directly in a browser.
+
+## Project Structure
+
+```text
+.
+|-- assets/
+|   `-- Ivana-Tatic-CV.pdf
+|-- css/
+|   `-- style.css
+|-- images/
+|   |-- projects/
+|   |   |-- lab-calc.png
+|   |   |-- moj-motivator.png
+|   |   `-- supplement-tracker.png
+|   |-- atom.png
+|   `-- ivana-tatic.jpg
+|-- js/
+|   `-- main.js
+|-- index.html
+`-- README.md
+```
+
+## Deployment
+
+The portfolio is deployed on [Netlify](https://www.netlify.com/). Pushes to the production branch can be configured to trigger a new deployment.
