@@ -6,6 +6,7 @@
   --bg-light: #f8fafc;
   --white: #ffffff;
   --text-main: #334155;
+  --radius: 8px;
   --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   --shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
 }
@@ -87,6 +88,45 @@ header {
 
 .nav-links a:hover {
   color: var(--accent-green);
+}
+
+.language-switcher {
+  display: flex;
+  border: 1px solid var(--accent-green);
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.language-switcher button {
+  min-width: 2.5rem;
+  padding: 0.35rem 0.5rem;
+  background: var(--white);
+  border: 0;
+  color: var(--accent-green);
+  cursor: pointer;
+  font: inherit;
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+.language-switcher button + button {
+  border-left: 1px solid var(--accent-green);
+}
+
+.language-switcher button[aria-pressed="true"] {
+  background: var(--accent-green);
+  color: var(--white);
+}
+
+.language-switcher button:focus-visible {
+  outline: 3px solid var(--accent-green);
+  outline-offset: 3px;
+}
+
+a:focus-visible,
+summary:focus-visible {
+  outline: 3px solid var(--accent-green);
+  outline-offset: 3px;
 }
 
 .cv-link {
@@ -243,11 +283,26 @@ header {
 }
 
 .project-header {
+  width: 100%;
   padding: 1.5rem 2rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
   cursor: pointer;
+  background: transparent;
+  border: 0;
+  color: inherit;
+  font: inherit;
+  text-align: left;
+}
+
+.project-header:hover {
+  background: rgba(45, 139, 90, 0.03);
+}
+
+.project-header:focus-visible {
+  outline: 3px solid var(--accent-green);
+  outline-offset: -3px;
 }
 
 .project-category {
@@ -415,7 +470,6 @@ summary {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  outline: none;
 }
 
 /* Hiding the triangle in Safari browser */
@@ -524,14 +578,18 @@ footer div a:hover {
     gap: 1.2rem;
   }
 
-  @media (max-width: 768px) {
-    footer .container {
-      flex-direction: column;
-      text-align: center;
-    }
+  .language-switcher {
+    margin-top: 0.25rem;
+  }
+}
 
-    footer div a {
-      margin: 0 10px;
-    }
+@media (max-width: 768px) {
+  footer .container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  footer div a {
+    margin: 0 10px;
   }
 }
