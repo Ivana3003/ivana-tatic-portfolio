@@ -5,10 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Ivana Tatić - Master of Organic Chemistry & Frontend Developer. Explore my portfolio featuring high-precision scientific web applications and modern JavaScript solutions."
+      content="Ivana Tatić - Master organske hemije i Frontend Developer. Portfolio sa naučnim web aplikacijama i modernim JavaScript rešenjima."
+      data-i18n-content="meta.description"
     />
-    <title>Ivana Tatić | MSc in Organic Chemistry & Frontend Developer</title>
+    <title data-i18n="meta.title">
+      Ivana Tatić | Master organske hemije i Frontend Developer
+    </title>
     <link rel="icon" type="image/png" href="images/atom.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
       rel="stylesheet"
@@ -20,43 +25,71 @@
     <header>
       <nav class="container navbar-flex">
         <div class="brand">
-          <img src="images/atom.png" alt="Logo" class="atom-icon" />
+          <img
+            src="images/atom.png"
+            alt="Ivana Tatić atom logo"
+            class="atom-icon"
+            data-i18n-alt="brand.logoAlt"
+          />
           <span><strong>Ivana Tatić</strong></span>
         </div>
         <ul class="nav-links">
-          <li><a href="#o-meni">O meni</a></li>
-          <li><a href="#projekti">Projekti</a></li>
-          <li><a href="#metodologija">Metodologija</a></li>
-          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#o-meni" data-i18n="nav.about">O meni</a></li>
+          <li><a href="#projekti" data-i18n="nav.projects">Projekti</a></li>
+          <li>
+            <a href="#metodologija" data-i18n="nav.methodology">Metodologija</a>
+          </li>
+          <li><a href="#faq" data-i18n="nav.faq">Česta pitanja</a></li>
           <li>
             <a
               href="assets/Ivana-Tatic-CV.pdf"
               download="Ivana-Tatic-CV"
               class="cv-link"
+              data-i18n="nav.cv"
               >CV</a
             >
           </li>
         </ul>
+        <div
+          class="language-switcher"
+          role="group"
+          aria-label="Izbor jezika"
+          data-i18n-aria-label="language.label"
+        >
+          <button type="button" data-language="sr" aria-pressed="true">
+            SR
+          </button>
+          <button type="button" data-language="en" aria-pressed="false">
+            EN
+          </button>
+        </div>
       </nav>
     </header>
 
     <main>
       <section class="hero container">
-        <h1>Od laboratorije do <span class="text-accent">čistog koda</span></h1>
-        <p>
+        <h1>
+          <span data-i18n="hero.title">Od laboratorije do </span
+          ><span class="text-accent" data-i18n="hero.titleAccent"
+            >čistog koda</span
+          >
+        </h1>
+        <p data-i18n="hero.description">
           Master organske hemije sa fokusom na frontend razvoj i analitički
           pristup rešavanju problema.
         </p>
-        <a href="#projekti" class="btn-primary">Pogledaj radove</a>
+        <a href="#projekti" class="btn-primary" data-i18n="hero.cta"
+          >Pogledaj radove</a
+        >
       </section>
 
       <section id="o-meni" class="container section-padding">
         <div class="about-grid">
           <div class="about-text">
-            <h2 class="section-title text-left">
+            <h2 class="section-title text-left" data-i18n="about.title">
               Naučna preciznost u digitalnom svetu
             </h2>
-            <p>
+            <p data-i18n="about.description">
               Kao Master organske hemije, navikla sam na analitičku preciznost i
               dešifrovanje kompleksnih sistema. Prelazak u IT vidim kao prirodnu
               evoluciju moje radoznalosti: danas, umesto molekula, strukturiram
@@ -68,11 +101,21 @@
               <div class="achievement-card">
                 <div class="achievement-icon">🏆</div>
                 <div class="achievement-info">
-                  <span class="achievement-rank"
+                  <span
+                    class="achievement-rank"
+                    data-i18n="about.achievementOne.rank"
                     >1. Mesto - Državno takmičenje</span
                   >
-                  <h4 class="achievement-title">Lančana reakcija</h4>
-                  <p class="achievement-desc">
+                  <h4
+                    class="achievement-title"
+                    data-i18n="about.achievementOne.title"
+                  >
+                    Lančana reakcija
+                  </h4>
+                  <p
+                    class="achievement-desc"
+                    data-i18n="about.achievementOne.description"
+                  >
                     Mentorski rad sa učenicima Gimnazije.
                   </p>
                 </div>
@@ -81,11 +124,21 @@
               <div class="achievement-card">
                 <div class="achievement-icon">🥈</div>
                 <div class="achievement-info">
-                  <span class="achievement-rank"
+                  <span
+                    class="achievement-rank"
+                    data-i18n="about.achievementTwo.rank"
                     >2. Mesto - Državno takmičenje</span
                   >
-                  <h4 class="achievement-title">Heroji budućnosti</h4>
-                  <p class="achievement-desc">
+                  <h4
+                    class="achievement-title"
+                    data-i18n="about.achievementTwo.title"
+                  >
+                    Heroji budućnosti
+                  </h4>
+                  <p
+                    class="achievement-desc"
+                    data-i18n="about.achievementTwo.description"
+                  >
                     Inovativni pristup rešavanju problema.
                   </p>
                 </div>
@@ -96,6 +149,7 @@
             <img
               src="images/ivana-tatic.jpg"
               alt="Ivana Tatić"
+              data-i18n-alt="about.imageAlt"
               class="profile-img"
             />
           </div>
@@ -103,37 +157,63 @@
       </section>
 
       <section id="projekti" class="container section-padding">
-        <h2 class="section-title">Istaknuti Projekti</h2>
+        <h2 class="section-title" data-i18n="projects.title">
+          Istaknuti projekti
+        </h2>
         <div class="projects-list">
           <article class="project-item">
-            <div class="project-header" onclick="toggleProject(this)">
+            <button
+              class="project-header"
+              type="button"
+              aria-expanded="false"
+              aria-controls="project-content-moj-motivator"
+              onclick="toggleProject(this)"
+            >
               <div>
-                <span class="project-category">Web App</span>
+                <span
+                  class="project-category"
+                  data-i18n="projects.motivator.category"
+                  >Web aplikacija</span
+                >
                 <h3>Moj Motivator</h3>
               </div>
-              <span class="toggle-arrow">▼</span>
-            </div>
-            <div class="project-content">
+              <span class="toggle-arrow" aria-hidden="true">▼</span>
+            </button>
+            <div class="project-content" id="project-content-moj-motivator">
               <img
-                src="images/moj-motivator.webp"
-                alt="Preview projekta Moj Motivator"
+                src="https://raw.githubusercontent.com/Ivana3003/moj-motivator/main/light-screenshot.png"
+                alt="Prikaz aplikacije Moj Motivator"
+                data-i18n-alt="projects.motivator.imageAlt"
                 class="project-img img-narrow"
                 width="542"
                 height="589"
+                loading="lazy"
               />
               <ul class="project-features">
                 <li>
-                  <strong>Opis:</strong> Interaktivna aplikacija za
-                  personalizovane citate sa fokusom na moderan UI i korisničko
-                  iskustvo.
+                  <strong data-i18n="projects.label.description">Opis:</strong>
+                  <span data-i18n="projects.motivator.description"
+                    >Aplikacija za dnevni fokus i inspirativne poruke, sa
+                    mogućnošću kreiranja sopstvenih poruka i čuvanja
+                    omiljenih.</span
+                  >
                 </li>
                 <li>
-                  <strong>Tehnologije:</strong> JS (LocalStorage), CSS Variables
-                  (Dark Mode), Lucide Icons.
+                  <strong data-i18n="projects.label.tech">Tehnologije:</strong>
+                  <span data-i18n="projects.motivator.tech"
+                    >HTML, CSS, JavaScript, Jest, LocalStorage, Lucide
+                    Icons.</span
+                  >
                 </li>
                 <li>
-                  <strong>Fokus:</strong> Pamćenje korisničkih podešavanja i
-                  fluidan dizajn.
+                  <strong data-i18n="projects.label.features"
+                    >Funkcionalnosti:</strong
+                  >
+                  <span data-i18n="projects.motivator.features"
+                    >Generator poruka, CRUD za lične poruke, favoriti, svetla i
+                    tamna tema, toast povratne informacije i podrška za
+                    pristupačnost.</span
+                  >
                 </li>
               </ul>
 
@@ -141,12 +221,14 @@
                 <a
                   href="https://it-moj-motivator.netlify.app/"
                   target="_blank"
+                  rel="noopener noreferrer"
                   class="link-btn"
                   >Live Demo</a
                 >
                 <a
                   href="https://github.com/Ivana3003/moj-motivator"
                   target="_blank"
+                  rel="noopener noreferrer"
                   class="link-btn github"
                   >GitHub</a
                 >
@@ -155,34 +237,60 @@
           </article>
 
           <article class="project-item">
-            <div class="project-header" onclick="toggleProject(this)">
+            <button
+              class="project-header"
+              type="button"
+              aria-expanded="false"
+              aria-controls="project-content-supplement-tracker"
+              onclick="toggleProject(this)"
+            >
               <div>
-                <span class="project-category">Web App / Science</span>
+                <span
+                  class="project-category"
+                  data-i18n="projects.supplement.category"
+                  >Web aplikacija / zdravlje</span
+                >
                 <h3>Supplement Tracker</h3>
               </div>
-              <span class="toggle-arrow">▼</span>
-            </div>
-            <div class="project-content">
+              <span class="toggle-arrow" aria-hidden="true">▼</span>
+            </button>
+            <div
+              class="project-content"
+              id="project-content-supplement-tracker"
+            >
               <img
-                src="images/supplement-tracker.webp"
-                alt="Preview projekta Supplement Tracker"
+                src="https://raw.githubusercontent.com/Ivana3003/supplement-tracker/main/screenshot.png"
+                alt="Prikaz aplikacije Supplement Tracker"
+                data-i18n-alt="projects.supplement.imageAlt"
                 class="project-img"
                 width="1067"
                 height="815"
+                loading="lazy"
               />
               <ul class="project-features">
                 <li>
-                  <strong>Opis:</strong> Pametna zdravstvena aplikacija za
-                  upravljanje unosom suplemenata sa fokusom na preciznost
-                  podataka i funkcionalnost.
+                  <strong data-i18n="projects.label.description">Opis:</strong>
+                  <span data-i18n="projects.supplement.description"
+                    >Aplikacija za praćenje suplemenata i hidratacije, sa
+                    podacima odvojenim po prijavljenom korisniku.</span
+                  >
                 </li>
                 <li>
-                  <strong>Tehnologije:</strong> JavaScript (i18n), HTML5 Data
-                  attributes, CSS Flexbox/Grid, Responsive Design
+                  <strong data-i18n="projects.label.tech">Tehnologije:</strong>
+                  <span data-i18n="projects.supplement.tech"
+                    >HTML, CSS, JavaScript, Firebase Authentication,
+                    LocalStorage, OpenFoodFacts API, Node test runner.</span
+                  >
                 </li>
                 <li>
-                  <strong>Fokus:</strong> Upravljanje podacima u realnom vremenu
-                  i trajnost (Data persistence) putem LocalStorage-a.
+                  <strong data-i18n="projects.label.features"
+                    >Funkcionalnosti:</strong
+                  >
+                  <span data-i18n="projects.supplement.features"
+                    >Email/password prijava, CRUD suplemenata, hydration
+                    tracker, browser podsetnici, srpski/engleski interfejs, API
+                    pretraga i in-app obrada grešaka.</span
+                  >
                 </li>
               </ul>
 
@@ -190,12 +298,14 @@
                 <a
                   href="https://it-supplement-tracker.netlify.app/"
                   target="_blank"
+                  rel="noopener noreferrer"
                   class="link-btn"
                   >Live Demo</a
                 >
                 <a
                   href="https://github.com/Ivana3003/supplement-tracker"
                   target="_blank"
+                  rel="noopener noreferrer"
                   class="link-btn github"
                   >GitHub</a
                 >
@@ -204,35 +314,56 @@
           </article>
 
           <article class="project-item">
-            <div class="project-header" onclick="toggleProject(this)">
+            <button
+              class="project-header"
+              type="button"
+              aria-expanded="false"
+              aria-controls="project-content-labcalc"
+              onclick="toggleProject(this)"
+            >
               <div>
-                <span class="project-category">Web App / Laboratory Tools</span>
+                <span
+                  class="project-category"
+                  data-i18n="projects.labcalc.category"
+                  >Web aplikacija / laboratorijski alati</span
+                >
                 <h3>LabCalc</h3>
               </div>
-              <span class="toggle-arrow">▼</span>
-            </div>
-            <div class="project-content">
+              <span class="toggle-arrow" aria-hidden="true">▼</span>
+            </button>
+            <div class="project-content" id="project-content-labcalc">
               <img
-                src="images/lab-calc.webp"
-                alt="Preview projekta LabCalc"
+                src="https://raw.githubusercontent.com/Ivana3003/lab-calc/main/screenshot.png"
+                alt="Prikaz aplikacije LabCalc"
+                data-i18n-alt="projects.labcalc.imageAlt"
                 class="project-img img-narrow"
                 width="672"
                 height="830"
+                loading="lazy"
               />
               <ul class="project-features">
                 <li>
-                  <strong>Opis:</strong> Profesionalni alat za precizne
-                  laboratorijske proračune (molarnost, razblaženja, konverzije)
-                  dizajniran da eliminiše manuelne greške u pripremi rastvora.
+                  <strong data-i18n="projects.label.description">Opis:</strong>
+                  <span data-i18n="projects.labcalc.description"
+                    >Kalkulator za laboratorijske proračune koji objedinjuje
+                    najčešće formule pri pripremi rastvora.</span
+                  >
                 </li>
                 <li>
-                  <strong>Tehnologije:</strong> JavaScript (ES6+ OOP), State
-                  Management, CSS Variables, Responsive Design.
+                  <strong data-i18n="projects.label.tech">Tehnologije:</strong>
+                  <span data-i18n="projects.labcalc.tech"
+                    >HTML, CSS, JavaScript, Jest.</span
+                  >
                 </li>
                 <li>
-                  <strong>Fokus:</strong> Automatizacija hemijskih formula uz
-                  strogo poštovanje naučne notacije i integriteta podataka
-                  (4-decimalna preciznost).
+                  <strong data-i18n="projects.label.features"
+                    >Funkcionalnosti:</strong
+                  >
+                  <span data-i18n="projects.labcalc.features"
+                    >Proračuni molarnosti, masenog procenta i razblaženja,
+                    konverzije jedinica, istorija proračuna, preset vrednosti,
+                    validacija, pristupačni tabovi i toast obaveštenja.</span
+                  >
                 </li>
               </ul>
 
@@ -240,12 +371,14 @@
                 <a
                   href="https://it-lab-calc.netlify.app/"
                   target="_blank"
+                  rel="noopener noreferrer"
                   class="link-btn"
                   >Live Demo</a
                 >
                 <a
                   href="https://github.com/Ivana3003/lab-calc"
                   target="_blank"
+                  rel="noopener noreferrer"
                   class="link-btn github"
                   >GitHub</a
                 >
@@ -256,12 +389,14 @@
       </section>
 
       <section id="metodologija" class="container section-padding">
-        <h2 class="section-title">Metodologija i pristup</h2>
+        <h2 class="section-title" data-i18n="methodology.title">
+          Metodologija i pristup
+        </h2>
         <div class="method-grid">
           <div class="method-card">
             <div class="method-icon">🔬</div>
-            <h3>Analitički pristup</h3>
-            <p>
+            <h3 data-i18n="methodology.analytical.title">Analitički pristup</h3>
+            <p data-i18n="methodology.analytical.description">
               Kao master organske hemije, prenosim laboratorijsku disciplinu u
               kod. Svaki problem razlažem na manje, rešive komponente uz
               maksimalnu preciznost.
@@ -270,8 +405,8 @@
 
           <div class="method-card">
             <div class="method-icon">⚡</div>
-            <h3>Moderni Standardi</h3>
-            <p>
+            <h3 data-i18n="methodology.standards.title">Moderni standardi</h3>
+            <p data-i18n="methodology.standards.description">
               Koristim Scrimba i Kampster metodologiju: semantički HTML,
               napredni CSS (Flexbox/Grid) i čistu logiku JavaScript-a.
             </p>
@@ -279,8 +414,8 @@
 
           <div class="method-card">
             <div class="method-icon">📚</div>
-            <h3>Kontinuirani razvoj</h3>
-            <p>
+            <h3 data-i18n="methodology.growth.title">Kontinuirani razvoj</h3>
+            <p data-i18n="methodology.growth.description">
               U IT svetu, kao i u nauci, učenje nikada ne prestaje. Trenutno
               produbljujem znanje JavaScript-a kroz napredne kurseve.
             </p>
@@ -289,13 +424,15 @@
       </section>
 
       <section id="faq" class="container section-padding">
-        <h2 class="section-title">Česta pitanja</h2>
+        <h2 class="section-title" data-i18n="faq.title">Česta pitanja</h2>
 
         <div class="faq-wrapper">
           <details>
-            <summary>Kako 18 godina hemije pomaže u kucanju koda?</summary>
+            <summary data-i18n="faq.first.question">
+              Kako 18 godina hemije pomaže u kucanju koda?
+            </summary>
             <div class="faq-content">
-              <p>
+              <p data-i18n="faq.first.answer">
                 Struktura, disciplina i sposobnost da satima rešavam kompleksne
                 probleme bez odustajanja. Rad u laboratoriji i programiranje
                 dele istu osnovu: precizno praćenje protokola i analitičko
@@ -305,9 +442,11 @@
           </details>
 
           <details>
-            <summary>Koji je tvoj sledeći korak u učenju?</summary>
+            <summary data-i18n="faq.second.question">
+              Koji je tvoj sledeći korak u učenju?
+            </summary>
             <div class="faq-content">
-              <p>
+              <p data-i18n="faq.second.answer">
                 Nakon utvrđivanja osnova JavaScript-a, planiram prelazak na
                 React framework i dublje izučavanje Sass-a, kako bih dodatno
                 optimizovala proces stilizovanja.
@@ -316,9 +455,11 @@
           </details>
 
           <details>
-            <summary>Da li si spremna za rad u timu?</summary>
+            <summary data-i18n="faq.third.question">
+              Da li si spremna za rad u timu?
+            </summary>
             <div class="faq-content">
-              <p>
+              <p data-i18n="faq.third.answer">
                 Kroz rad u obrazovanju i mentorstvo, razvila sam visok nivo
                 komunikacije i timskog duha. Verujem da je razmena znanja
                 ključna za uspeh svakog projekta.
@@ -332,20 +473,27 @@
     <footer>
       <div class="container">
         <p>
-          &copy; 2026 | Ivana Tatić | Master organske hemije &mdash; Frontend
-          Developer
+          &copy; <span id="current-year"></span> | Ivana Tatić |
+          <span data-i18n="footer.role"
+            >Master organske hemije - Frontend Developer</span
+          >
         </p>
         <div>
           <a
             href="https://linkedin.com/in/ivana-tatic"
             target="_blank"
-            rel="noopener"
+            rel="noopener noreferrer"
             >LinkedIn</a
           >
-          <a href="https://github.com/Ivana3003" target="_blank" rel="noopener"
+          <a
+            href="https://github.com/Ivana3003"
+            target="_blank"
+            rel="noopener noreferrer"
             >GitHub</a
           >
-          <a href="mailto:iramljak84@gmail.com">Kontakt</a>
+          <a href="mailto:iramljak84@gmail.com" data-i18n="footer.contact"
+            >Kontakt</a
+          >
         </div>
       </div>
     </footer>
