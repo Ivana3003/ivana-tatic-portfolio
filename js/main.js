@@ -1,3 +1,5 @@
+"use strict";
+
 /**
  * Toggles the visibility of project cards.
  * Implements an "Accordion" effect where only one project remains open at a time.
