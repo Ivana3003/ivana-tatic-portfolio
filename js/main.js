@@ -39,7 +39,7 @@ const translations = {
     "projects.motivator.tech":
       "HTML, CSS, JavaScript, Jest, LocalStorage, Lucide Icons.",
     "projects.motivator.features":
-      "Generator poruka, CRUD za lične poruke, favoriti, svetla i tamna tema, toast povratne informacije i podrška za pristupačnost.",
+      "Generator poruka, CRUD za lične poruke, favoriti, svetla i tamna tema, srpski/engleski interfejs, toast povratne informacije i podrška za pristupačnost.",
     "projects.supplement.category": "Web aplikacija / zdravlje",
     "projects.supplement.imageAlt": "Prikaz aplikacije Supplement Tracker",
     "projects.supplement.description":
@@ -118,7 +118,7 @@ const translations = {
     "projects.motivator.tech":
       "HTML, CSS, JavaScript, Jest, LocalStorage, Lucide Icons.",
     "projects.motivator.features":
-      "Message generator, custom message CRUD, favourites, light and dark theme, toast feedback, and accessibility support.",
+      "Message generator, custom message CRUD, favorites, light and dark theme, Serbian/English language support (i18n), toast feedback, and accessibility support.",
     "projects.supplement.category": "Web application / health",
     "projects.supplement.imageAlt": "Supplement Tracker application preview",
     "projects.supplement.description":
@@ -215,7 +215,7 @@ setLanguage(savedLanguage || document.documentElement.lang);
  */
 const toggleProject = (buttonElement) => {
   // Select the parent project article element
-  const currentItem = buttonElement.parentElement;
+  const currentItem = buttonElement.closest(".project-item");
 
   // Check if the clicked project is already expanded
   const isActive = currentItem.classList.contains("active");
