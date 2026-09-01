@@ -37,6 +37,7 @@ body {
 
 .section-padding {
   padding: 6rem 0;
+  scroll-margin-top: 80px; /* adjust to match the exact height of your header */
 }
 
 /* 2. HEADER AND NAVIGATION */
@@ -587,6 +588,10 @@ footer div a:hover {
 
   .language-switcher {
     margin-top: 0.25rem;
+  }
+
+  .section-padding {
+    scroll-margin-top: 150px; /* adjust to match the exact height of your header */
   }
 }
 
