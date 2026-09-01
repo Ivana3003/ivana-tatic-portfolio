@@ -296,6 +296,10 @@ summary:focus-visible {
   text-align: left;
 }
 
+.project-title {
+  margin: 0;
+}
+
 .project-header:hover {
   background: rgba(45, 139, 90, 0.03);
 }
